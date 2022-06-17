@@ -1,2 +1,2 @@
 let durability = 100;
-let battery = 95;
+let battery = 92;
