@@ -1,1 +1,0 @@
-let ageVar = 15;
