@@ -1,3 +1,52 @@
+body{          
+    background: rgb(219, 216, 223);
+    font-family: Calibri;
+    width: 800px;
+    margin: auto;
+}  
+ 
+#fullstackWorldTitle{
+    color: rgba(98, 89, 228,0.886);
+    font-style: bold;
+    font-size: 28px;
+    margin-bottom: 10px;
+}  
+
 .fullstackPillarsHeader {
-    color: rgb(80, 0, 177);
+    color: rgba(98, 89, 228,0.886);
+}    
+                  
+.fullstackSection01{
+    background: rgb(255, 255, 255);
+    border: 3px solid rgb(0,0,0);
+    border-radius: 10px;
+    margin: 9px;
+    padding: 8px;
+}            
+          
+.introContent{
+    margin: 0;
+    margin-bottom: 8px;
+}   
+      
+.fullstackImage01, .fullstackImage02{
+    border: 5px solid rgba(98, 89, 228, 0.886);
+    border-radius: 10px;
+    width: 100%;
+}            
+                                
+.doubtsTitle{      
+    text-transform: uppercase;
+}        
+                     
+a {      
+    color: rgb(0,0,0);              
+}   
+
+.professionalMedias{
+    list-style-type: square;
+} 
+
+.professionalMedias li a {
+    text-decoration: none;
 }
