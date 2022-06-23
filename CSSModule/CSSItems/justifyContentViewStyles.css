@@ -1,0 +1,38 @@
+.containerItem{
+    border: 2px solid rgb(0,0,0);
+    max-width: 398px;
+    margin: 0;
+    display: flex;
+}
+
+.element{
+    margin: 4px;
+    text-align: center;
+    color: rgb(0,0,0);
+}
+
+.columnStyle{
+    min-height: 248px;
+    flex-direction: column;
+}
+
+.space-between{
+    justify-content: space-between;    
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+.flex-start{
+    justify-content: flex-start;
+}
+
+.flex-end{
+    justify-content: flex-end;
+}
+
+.center{
+    justify-content: center;
+}
+
