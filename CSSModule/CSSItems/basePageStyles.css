@@ -1,0 +1,12 @@
+.flex{
+    display: flex;
+    padding: 9px;
+    max-width: 280px;
+    border: 2px solid rgb(0,0,0);
+}
+
+.item{
+    margin: 4px;
+    background-color: rgb(13, 0, 255);
+    color: rgb(255,255,255);
+}
