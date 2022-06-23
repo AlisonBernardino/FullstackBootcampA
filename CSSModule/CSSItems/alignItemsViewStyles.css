@@ -1,0 +1,48 @@
+.containerDivision{
+    display: flex;
+    max-width: 348px;
+    border: 2px solid rgb(0,0,0);
+}
+
+.itemDivision{
+    flex: 1;
+    text-align: center;
+    margin: 4px;
+    color: rgb(255,255,255);
+    background-color: rgb(30,2,210);
+}
+
+.flexStartModule{  
+    align-items: flex-start;
+}
+
+.flexEndModule{
+    align-items: flex-end;
+}
+
+.stretchModule{
+    align-items: stretch;
+}
+
+.baselineModule{
+    align-items: baseline;
+}
+
+.centerModule{
+    align-items: center;
+}
+
+.columnModule{
+    flex-direction: column;
+}
+
+.pivotModule{
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+
+.pivotModule .itemDivision{
+    padding: 19px;
+    flex: 0;
+}
