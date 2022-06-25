@@ -1,0 +1,21 @@
+.flexContainerDivision{
+    border: 2px solid rgb(0,0,0);
+    display: flex;
+    max-width: 295px;
+}
+
+.itemsDivision{
+    margin: 4px;
+    text-align: center;
+    background-color: rgb(255,0,0);
+    color: rgb(255,255,255);
+}
+
+.flexGrow0Configuration{
+    flex-grow: 0; 
+}
+
+.flexBasisAutoConfiguration{
+    flex-basis: auto;
+}
+
