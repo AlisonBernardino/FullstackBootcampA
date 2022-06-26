@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSSItems/flexAndOrderViewStyles.css">
+        <title>CSS Flexbox: flex</title>
+    </head>
+    <body>
+        <h1>CSS Flexbox: "flex"</h1>
+        <hr>
+        <h2>flex: 1</h2>
+        <div class="flexContainerSettings">
+            <div class="itemSettings flex1Settings">1</div>
+            <div class="itemSettings flex1Settings">2</div>
+            <div class="itemSettings flex1Settings">3</div>
+            <div class="itemSettings flex1Settings">4</div>
+        </div>
+        <hr>
+        <h2>flex: Alternated values</h2>
+        <div class="flexContainerSettings">
+            <div class="itemSettings flex1Settings">Q</div>
+            <div class="itemSettings flex1Settings">W</div>
+            <div class="itemSettings flex3Settings">E</div>
+            <div class="itemSettings flex3Settings">R</div>
+        </div>
+        <hr>
+        <h2>Discarded "width" >> basis = = 0</h2>
+        <div class="flexContainerSettings">
+            <div class="itemSettings flex1Settings width250Settings">A</div>
+            <div class="itemSettings flex1Settings width250Settings">B</div>
+            <div class="itemSettings flex1Settings width250Settings">C</div>
+            <div class="itemSettings flex1Settings width250Settings">D</div>
+        </div>
+        <hr>
+        <h1>"order" (row) </h1>
+        <hr>
+        <h2>order: default</h2>
+        <div class="orderFlexContainer">
+            <div class="orderItem">A</div>
+            <div class="orderItem">B</div>
+            <div class="orderItem">C</div>
+            <div class="orderItem">D</div>
+        </div>
+        <hr>
+        <h2>order: Alternated</h2>
+        <div class="orderFlexContainer">
+            <div class="orderItem order-1Settings">W</div>
+            <div class="orderItem order1Settings">R</div>
+            <div class="orderItem order-2Settings">Q</div>
+            <div class="orderItem order0Settings">E</div>
+        </div>
+        <hr>
+        <h1>"order" (column)</h1>
+        <hr>
+        <h2>order: default</h2>
+        <div class="orderFlexContainer columnDirectionSettings">
+            <div class="orderItem">Z</div>
+            <div class="orderItem">X</div>
+            <div class="orderItem">C</div>
+            <div class="orderItem">V</div>
+        </div>
+        <hr>
+        <h2>order: Alternated</h2>
+        <div class="orderFlexContainer columnDirectionSettings">
+            <div class="orderItem order-1Settings">S</div>
+            <div class="orderItem order0Settings">D</div>
+            <div class="orderItem order-2Settings">A</div>
+            <div class="orderItem order1Settings">F</div>
+        </div>
+    </body>
+</html>
