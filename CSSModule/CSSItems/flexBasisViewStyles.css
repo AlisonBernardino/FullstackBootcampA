@@ -1,0 +1,37 @@
+.flexContainerDivision{
+    border: 2px solid rgb(0,0,0);
+    display: flex;
+    max-width: 700px;
+}
+
+.itemsDivision{
+    margin: 4px;
+    text-align: center;
+    background-color: rgb(255,0,0);
+    color: rgb(255,255,255);
+}
+
+.flexGrow0Configuration{
+    flex-grow: 0;
+}
+
+.flexGrow1Configuration{
+    flex-grow: 1; 
+}
+
+.flexGrow2Configuration{
+    flex-grow: 2;
+}
+
+.flexBasisAutoConfiguration{
+    flex-basis: auto;
+}
+
+.flexBasis0Configuration{
+    flex-basis: 0;
+}
+
+.flexBasis110Configuration{
+    flex-basis: 110px;
+}
+

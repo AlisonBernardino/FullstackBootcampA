@@ -1,0 +1,41 @@
+.containerElement{
+    border: 2px solid rgb(0,0,0);
+    max-width: 295px;
+    height: 345px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.itemElement{
+    background-color: rgb(0, 115, 135);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0 4px;
+    margin: 4px;
+    border: 1px solid rgb(0,0,0);
+    flex: 1;
+}
+
+.stretchModification{
+    align-content: stretch;
+}
+
+.centerModification{
+    align-content: center;
+}
+
+.flexStartModification{
+    align-content: flex-start;
+}
+
+.flexEndModification{
+    align-content: flex-end;
+}
+
+.spaceBetweenModification{
+    align-content: space-between;
+}
+
+.spaceAroundModification{
+    align-content: space-around;
+}
