@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSSItems/flexShrinkViewStyles.css">
+        <title>CSS Flexbox: flex-shrink</title>
+    </head>
+    <body>
+        <h1>CSS Flexbox: flex-shrink</h1>
+        <hr>
+        <h2>flex-shrink: 1 + flex-grow: 1</h2>
+        <div class="flexContainerSection">
+            <div class="itemSection flexShrink1Settings flexGrow1Settings">I</div>
+            <div class="itemSection flexShrink1Settings flexGrow1Settings">II</div>
+            <div class="itemSection flexShrink1Settings flexGrow1Settings">III</div>
+            <div class="itemSection flexShrink1Settings flexGrow1Settings">IV</div>
+            <div class="itemSection flexShrink1Settings flexGrow1Settings">V</div>
+        </div>
+        <hr>
+        <h2>flex-shrink: 0 + flex-grow: 1 + flex-basis: 120px</h2>
+        <div class="flexContainerSection">
+            <div class="itemSection flexShrink0Settings flexGrow1Settings flexBasis120Settings">Z</div>
+            <div class="itemSection flexShrink0Settings flexGrow1Settings flexBasis120Settings">X</div>
+            <div class="itemSection flexShrink0Settings flexGrow1Settings flexBasis120Settings">C</div>
+            <div class="itemSection flexShrink0Settings flexGrow1Settings flexBasis120Settings">V</div>
+            <div class="itemSection flexShrink0Settings flexGrow1Settings flexBasis120Settings">B</div>
+        </div>
+        <hr>
+        <h2> flex-shrink: mix + flex-grow: 1 + flex-basis: 110px</h2>
+        <div class="flexContainerSection">
+            <div class="itemSection flexShrink0Settings flexGrow1Settings flexBasis110Settings">A</div>
+            <div class="itemSection flexShrink1Settings flexGrow1Settings flexBasis110Settings">B</div>
+            <div class="itemSection flexShrink3Settings flexGrow1Settings flexBasis110Settings">C</div>
+            <div class="itemSection flexShrink5Settings flexGrow1Settings flexBasis110Settings">D</div>
+        </div>
+    </body>
+</html>

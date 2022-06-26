@@ -1,0 +1,42 @@
+.flexContainerSection{
+    max-width: 360px;
+    margin-bottom: 9px;
+    display: flex;
+    border: 1px solid rgb(0,0,0);
+}
+
+.itemSection{
+    margin: 4px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(0, 114, 0);
+    color: rgb(255,255,255);
+}
+
+.flexBasis110Settings{
+    flex-basis: 110px;
+}
+
+.flexBasis120Settings{
+    flex-basis: 120px;
+}
+
+.flexGrow1Settings{
+    flex-grow: 1;
+}
+
+.flexShrink0Settings{
+    flex-shrink: 0;
+}
+
+.flexShrink1Settings{
+    flex-shrink: 1;
+}
+
+.flexShrink3Settings{
+    flex-shrink: 3;
+}
+
+.flexShrink5Settings{
+    flex-shrink: 5;
+}
