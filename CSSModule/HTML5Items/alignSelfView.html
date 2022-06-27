@@ -5,14 +5,40 @@
         <title> CSS Flexbox: align-self</title>
     </head>
     <body>
-        <h1>CSS Flexbox: align-self</h1>
+        <h1>CSS Flexbox: align-self (row)</h1>
         <hr>
-        <h2>align-self</h2>
+        <h2>align-self: auto</h2>
+        <div class="containerElement alignElementsInTheCenterSettings">
+            <div class="itemElement alignAutoSettings">Item 1</div>
+            <div class="itemElement alignAutoSettings">Item 2 - Item 2</div>
+            <div class="itemElement alignAutoSettings">Sample item 3 - Sample item 3 - Sample item 3</div>
+            <div class="itemElement alignAutoSettings">Item IV - 4th element</div>
+        </div>
+        <hr>
+        <h2>align-self: Alternated</h2>
         <div class="containerElement">
-            <div class="itemElement">1</div>
-            <div class="itemElement">2</div>
-            <div class="itemElement">3</div>
-            <div class="itemElement">4</div>
+            <div class="itemElement alignAutoSettings">Item A</div>
+            <div class="itemElement alignStretchSettings">Element B - Item</div>
+            <div class="itemElement alignAutoSettings">Fragment C == Fragment C == Fragment C == Fragment C == Fragment C</div>
+            <div class="itemElement alignStartSettings">Item IV - Element 4</div>
+        </div>
+        <hr>
+        <h1> align-self (column)</h1>
+        <hr>
+        <h2>align-self: Alternated + align-items: flex-end</h2>
+        <div class="containerElement alignElementsInTheEndSettings columnDirectionSettings">
+            <div class="itemElement alignAutoSettings">Item A</div>
+            <div class="itemElement alignBaselineSettings">Item B - Item B</div>
+            <div class="itemElement alignEndSettings">Item C >> Item C >> Item C</div>
+            <div class="itemElement alignStartSettings">Item D <> Item D</div> 
+        </div>
+        <hr>
+        <h2>align-self: auto + align-items: center</h2>
+        <div class="containerElement alignElementsInTheCenterSettings columnDirectionSettings">
+            <div class="itemElement alignAutoSettings">Element 1</div>
+            <div class="itemElement alignAutoSettings">Element 2 - Element 2</div>
+            <div class="itemElement alignAutoSettings">Element 3 >>> Element 3 >>> Element 3</div>
+            <div class="itemElement alignAutoSettings">Element 4 <> Element 4</div>
         </div>
     </body>
 </html>
