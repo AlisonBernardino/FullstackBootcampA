@@ -1,0 +1,50 @@
+.containerElement{
+    display: flex;
+    margin-bottom: 12px;
+    max-width: 380px;
+    border: 2px solid rgb(0,0,0);
+}
+
+.itemElement{
+    margin: 4px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(255,0,0);
+    color: rgb(255,255,255);
+}
+
+.alignElementsInTheCenterSettings{
+    align-items: center;
+}
+
+.alignElementsInTheEndSettings{
+    align-items: flex-end;
+}
+
+.alignStretchSettings{
+    align-self: stretch;
+}
+
+.alignAutoSettings{
+    align-self: auto;
+}
+
+.alignBaselineSettings{
+    align-self: baseline;
+}
+
+.alignStartSettings{
+    align-self: flex-start;
+}
+
+.alignEndSettings{
+    align-self: flex-end;
+}
+
+.alignCenterSettings{
+    align-self: center;
+}
+
+.columnDirectionSettings{
+    flex-direction: column;
+}
