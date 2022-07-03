@@ -40,9 +40,11 @@ function compareItems(valueA, valueB) {
 compareItems(numberA, numberB);
 
 // Form 03
-function compareValues(valueA, valueB) {
+function compareElements(valueA, valueB) {
   const equalitySentence = createEqualitySentence(valueA, valueB);
   const valuesCheckSentence = createValuesCheckSentence(valueA, valueB);
+
+  return `${equalitySentence} ${valuesCheckSentence}`;
 }
 
 function createEqualitySentence(valueA, valueB) {
@@ -58,12 +60,17 @@ function createEqualitySentence(valueA, valueB) {
 function createValuesCheckSentence(valueA, valueB) {
   const valuesSum = valueA + valueB;
 
-  let isShorterThan10 = " less than ";
-  let isShorterThan20 = isShorterThan10;
-  let isGreaterThan10 = " greater than ";
-  let isGreaterThan20 = isGreaterThan10;
+  let comparisonWith10Result;
   const comparisonGreaterThan10 = valuesSum > 10;
   const comparisonShorterThan10 = valuesSum < 10;
-  const comparisonGreaterThan20 = valuesSum > 20;
-  const comparisonShorterThan20 = valuesSum < 20;
+
+  if(comparisonGreaterThan10){
+    comparisonWith10Result = 'greater than';
+  }else if(comparisonShorterThan10){
+    comparisonWith10Result = 'less than';
+  }
+
+  return `Your sum is ${valuesSum}. This value is ${comparisonWith10Result} 10.`;
 }
+
+console.log(compareElements(3,5));
