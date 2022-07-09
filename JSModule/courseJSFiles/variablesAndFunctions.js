@@ -24,3 +24,9 @@ function returnOddValues(vector) {
 }
 
 returnOddValues(generalValuesVector);
+
+// ".join" method
+let enterpriseName = ["Microsoft"];
+console.log(`"enterpriseName" before ".join" method =`,enterpriseName);
+console.log(`"enterpriseName" after ".join" method = `, enterpriseName.join(""));
+
