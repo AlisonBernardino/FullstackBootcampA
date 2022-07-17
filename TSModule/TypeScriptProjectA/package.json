@@ -1,0 +1,15 @@
+{
+  "name": "sampleproject01",
+  "version": "1.0.0",
+  "description": "A Typescript project sample for learning purposes.",
+  "main": "index.js",
+  "scripts": {
+   "start":"parcel projectIndex.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "BERCOWOR - Bernardino Coding Works - 2022",
+  "license": "MIT",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
