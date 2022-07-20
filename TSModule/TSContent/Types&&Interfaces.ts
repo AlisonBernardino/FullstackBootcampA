@@ -3,8 +3,8 @@
 interface droneInterface {
   type: string;
   modality: 'Air' | 'Water';
-  showDroneTypeMessage(outputMessage: string): void;
   isMultiPartsCompatible: boolean;
+  showDroneTypeMessage(outputMessage: string): void;
 }
 
 interface camoDrones extends droneInterface {
@@ -13,8 +13,16 @@ interface camoDrones extends droneInterface {
   isMultiPartsCompatible: true;
 }
 
+interface fuelType extends droneInterface {
+  fuelType: string;
+}
+
+interface reinforcedMaterial extends droneInterface {
+  reinforcedMaterialType: string;
+}
+
 // Types
-type specialDeviceType = camoDrones | extraSpecs;
+type specialDeviceType = fuelType | reinforcedMaterial;
 
 interface extraSpecs extends droneInterface {
   isExtraStorageAvailable: boolean;
@@ -57,8 +65,13 @@ const droneC: extraSpecs = {
 droneC.showDroneTypeMessage(`${droneC.type}`);
 
 const droneD: specialDeviceType = {
-    
-}
+  type: 'DK001',
+  modality: 'Water',
+  isMultiPartsCompatible: true,
+  fuelType: 'Gasoline',
+  reinforcedMaterialType: 'Metal',
+  showDroneTypeMessage: (outputMessage) => `${outputMessage}`,
+};
 
 // Grabbing and handling the HTML "input" element
 const firstTitleSelection = document.getElementById(
