@@ -1,0 +1,24 @@
+<h2>Languages list: </h2>
+
+<table class="table table-striped">
+  <thead>
+    <th>Logo:</th>
+    <th>ID: </th>
+    <th>Title: </th>
+    <th>Stack: </th>
+    <th>Code: </th>
+    <th>Classification: </th>
+    <th>Reference date: </th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let language of languages">
+      <td>{{language.logoURL}}</td>
+      <td>{{language.ID}}</td>
+      <td>{{language.title}}</td>
+      <td>{{language.stack}}</td>
+      <td>{{language.code}}</td>
+      <td>{{language.classification}}</td>
+      <td>{{language.referenceDate}}</td>
+    </tr>
+  </tbody>
+</table>
