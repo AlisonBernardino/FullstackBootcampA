@@ -6,4 +6,5 @@ export class Language {
   code!: string;
   classification!: number;
   referenceDate!: string;
+  description!: string;
 }

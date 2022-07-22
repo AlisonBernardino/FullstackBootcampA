@@ -9,16 +9,21 @@
     <th>Code: </th>
     <th>Classification: </th>
     <th>Reference date: </th>
+    <th>Description: </th>
+    <th>User actions: </th>
   </thead>
   <tbody>
     <tr *ngFor="let language of languages">
-      <td>{{language.logoURL}}</td>
+      <td><img [src]="language.logoURL" width=32 height=35></td>
       <td>{{language.ID}}</td>
       <td>{{language.title}}</td>
       <td>{{language.stack}}</td>
       <td>{{language.code}}</td>
-      <td>{{language.classification}}</td>
+      <td>
+        <app-rating [ratingIndex]="language.classification"></app-rating>
+      </td>
       <td>{{language.referenceDate}}</td>
+      <td>{{language.description}}</td>
     </tr>
   </tbody>
 </table>
