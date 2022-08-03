@@ -1,0 +1,27 @@
+<h2> Language information: </h2>
+<hr />
+<form #languageForm="ngForm">
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Title: </label>
+    <div class="col-sm-10">
+      <input [(ngModel)]="language.title" required name="title" #languageTitle="ngModel"
+        [ngClass]="{'is-invalid': languageTitle.invalid}" class="form-control">
+      <div class="invalid-feedback">
+        <span>Language name is required!</span>
+      </div>
+    </div>
+  </div>
+  <div cçass="form-group row">
+    <label class="col-sm-2 col-form-label">Stack: </label>
+    <div class="col-sm-10">
+      <input [(ngModel)]="language.stack" required name="stack" #languageStack="ngModel"
+        [ngClass]="{'is-invalid': languageStack.invalid}" class="form-control">
+      <div class="invalid-feedback">
+        <span>Stack is required!</span>
+      </div>
+    </div>
+  </div>
+
+  <button [disabled]="languageForm.invalid" (click)="saveForm()" class="btn btn-primary mr-2">Save</button>
+  <button [routerLink]="['./languages']" class="btn btn-secondary">Go back</button>
+</form>

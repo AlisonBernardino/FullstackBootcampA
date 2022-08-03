@@ -1,14 +1,31 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { LanguageModule } from './languages/Language.module';
 
 import { AppComponent } from './app.component';
-import { LanguagesListComponent } from './languages/languagesList.component';
-import {RatingComponent} from './ratingStars/rating.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { error404Component } from './error404/error404.component';
 
 @NgModule({
-  declarations: [AppComponent, LanguagesListComponent, RatingComponent],
-  imports: [BrowserModule, FormsModule],
+  declarations: [AppComponent, NavbarComponent, error404Component],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    LanguageModule,
+    RouterModule.forRoot([
+      {
+        path: '',
+        redirectTo: 'languages',
+        pathMatch: 'full',
+      },
+      {
+        path: '**',
+        component: error404Component,
+      },
+    ]),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

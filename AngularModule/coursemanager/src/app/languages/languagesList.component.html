@@ -1,5 +1,14 @@
 <h2>Languages list: </h2>
 
+<div class="">
+  <label class="col-sm-2 col-from-label">
+    Filter by:
+  </label>
+  <div class="col-sm-10">
+    <input [(ngModel)]="filterItem" class="form-control">
+  </div>
+</div>
+
 <table class="table table-striped">
   <thead>
     <th>Logo:</th>
@@ -10,20 +19,26 @@
     <th>Classification: </th>
     <th>Reference date: </th>
     <th>Description: </th>
-    <th>User actions: </th>
+    <th>Options: </th>
   </thead>
   <tbody>
-    <tr *ngFor="let language of languages">
+    <tr *ngFor="let language of filteredLanguages">
       <td><img [src]="language.logoURL" width=32 height=35></td>
       <td>{{language.ID}}</td>
       <td>{{language.title}}</td>
       <td>{{language.stack}}</td>
-      <td>{{language.code}}</td>
+      <td>{{language.code | replacement: '-':'.'}}</td>
       <td>
         <app-rating [ratingIndex]="language.classification"></app-rating>
       </td>
-      <td>{{language.referenceDate}}</td>
+      <td>{{language.referenceDate | date: 'dd/MM/yyyy' }}</td>
       <td>{{language.description}}</td>
+      <td>
+        <a [routerLink]="['/languages/info', language.ID]" class="btn
+          btn-primary">Edit</a>
+        <button (click)="deleteLanguageByID(language.ID)" class="btn
+          btn-danger">Delete</button>
+      </td>
     </tr>
   </tbody>
 </table>
